@@ -26,6 +26,7 @@ public class BookingRequests {
 
     public static Response updateBooking(String token, int id, BookingByID bookingByID){
         return RestAssured.given()
+                .contentType(ContentType.JSON)
                 .header("Cookie", "token=" + token)
                 .body(bookingByID)
                 .log().all()

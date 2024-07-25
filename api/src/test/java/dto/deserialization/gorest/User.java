@@ -4,7 +4,7 @@ import io.cucumber.core.internal.com.fasterxml.jackson.annotation.JsonIgnoreProp
 import lombok.Data;
 
 @Data
-@JsonIgnoreProperties
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class User {
     private int id;
     private String name;

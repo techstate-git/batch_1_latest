@@ -1,6 +1,7 @@
 package stepDefinitions.gorest;
 
 import dto.deserialization.gorest.User;
+import io.cucumber.core.internal.com.fasterxml.jackson.databind.ObjectMapper;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
